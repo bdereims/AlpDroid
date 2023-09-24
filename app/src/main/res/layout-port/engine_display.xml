@@ -269,8 +269,8 @@
                 app:sv_markStyle="ROUND"
                 app:sv_marksNumber="5"
                 app:sv_marksPadding="26dp"
-                app:sv_maxSpeed="165"
-                app:sv_minSpeed="55"
+                app:sv_maxSpeed="135"
+                app:sv_minSpeed="85"
                 app:sv_speedTextColor="#FFFFFF"
                 app:sv_speedTextFormat="INTEGER"
                 app:sv_speedTextPadding="52dp"
@@ -286,8 +286,7 @@
                 app:sv_unitTextSize="24dp"
                 app:sv_withIndicatorLight="true"
                 app:sv_withTremble="false"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="16dp" />
+                tools:ignore="MissingConstraints" />
 
             <com.github.anastr.speedviewlib.ImageSpeedometer
                 android:id="@+id/Intake_jauge"
@@ -372,7 +371,7 @@
                 app:sv_marksNumber="5"
                 app:sv_marksPadding="26dp"
                 app:sv_maxSpeed="145"
-                app:sv_minSpeed="55"
+                app:sv_minSpeed="75"
                 app:sv_speedTextColor="#FFFFFF"
                 app:sv_speedTextFormat="INTEGER"
                 app:sv_speedTextPadding="52dp"
@@ -382,11 +381,11 @@
                 app:sv_tickNumber="7"
                 app:sv_tickPadding="40dp"
                 app:sv_tickRotation="false"
-                app:sv_withTremble="false"
                 app:sv_tickTextFormat="INTEGER"
                 app:sv_unit="°C"
                 app:sv_unitTextColor="#FFFFFF"
-                app:sv_unitTextSize="22dp" />
+                app:sv_unitTextSize="22dp"
+                app:sv_withTremble="false" />
 
             <com.github.anastr.speedviewlib.ImageSpeedometer
                 android:id="@+id/Gear_jauge"
@@ -400,10 +399,10 @@
                 app:sv_markColor="#0434E4"
                 app:sv_markHeight="14dp"
                 app:sv_markStyle="ROUND"
-                app:sv_marksNumber="11"
+                app:sv_marksNumber="5"
                 app:sv_marksPadding="24dp"
-                app:sv_maxSpeed="160"
-                app:sv_minSpeed="60"
+                app:sv_maxSpeed="135"
+                app:sv_minSpeed="85"
                 app:sv_speedTextColor="#FFFFFF"
                 app:sv_speedTextFormat="INTEGER"
                 app:sv_speedTextPadding="52dp"
@@ -415,9 +414,9 @@
                 app:sv_tickRotation="false"
                 app:sv_tickTextFormat="INTEGER"
                 app:sv_unit="°C"
-                app:sv_withTremble="false"
                 app:sv_unitTextColor="#FFFFFF"
-                app:sv_unitTextSize="22dp" />
+                app:sv_unitTextSize="22dp"
+                app:sv_withTremble="false" />
 
             <TextView
                 android:id="@+id/text_oddoRate"
