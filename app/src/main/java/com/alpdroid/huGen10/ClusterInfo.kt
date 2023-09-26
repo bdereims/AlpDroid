@@ -567,18 +567,20 @@ class ClusterInfo (var application: AlpdroidApplication):OnOsmandMissingListener
             var rrwp=0.0f
 
             try {
-                flwp=(application.alpdroidData.get_FrontLeftWheelPressure_V2().toFloat()*30/1000)
-                frwp= (application.alpdroidData.get_FrontRightWheelPressure_V2().toFloat()*30/1000)
-                rlwp= (application.alpdroidData.get_RearLeftWheelPressure_V2().toFloat()*30/1000)
-                rrwp= (application.alpdroidData.get_RearRightWheelPressure_V2().toFloat()*30/1000)
+                // offset of 60 compared to my BG pressure gauge
+                flwp=((application.alpdroidData.get_FrontLeftWheelPressure_V2().toFloat()*30+60)/1000)
+                frwp=((application.alpdroidData.get_FrontRightWheelPressure_V2().toFloat()*30+60)/1000)
+                rlwp=((application.alpdroidData.get_RearLeftWheelPressure_V2().toFloat()*30+60)/1000)
+                rrwp=((application.alpdroidData.get_RearRightWheelPressure_V2().toFloat()*30+60)/1000)
 
             }
             catch (e:Exception)
             {
                 // do nothing
             }
-            radioartistname = String.format("H:%3d°C B:%3d°C",application.alpdroidData.get_OilTemperature() -40,application.alpdroidData.get_RST_ATClutchTemperature() + 60)
-            radiotrackname =  String.format("G%.1f D%.1f \u000Cg%.1f d%.1f", flwp,frwp,rlwp,rrwp)
+            radioartistname = String.format("O:%3d°C G:%3d°C",application.alpdroidData.get_OilTemperature() - 40,application.alpdroidData.get_RST_ATClutchTemperature() + 60)
+            //radiotrackname =  String.format("LF:%.2f RF%.2f \u000CLR%.2f RR%.2f", flwp,frwp,rlwp,rrwp)
+            radiotrackname =  String.format("LF:%.2f RF%.2f \u2028LR%.2f RR%.2f", flwp,frwp,rlwp,rrwp)
             prevtrackName=radiotrackname
             audioSource=4
             updateMusic=true

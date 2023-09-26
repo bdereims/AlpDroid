@@ -10,9 +10,9 @@
         android:layout_height="wrap_content"
         android:text="Min"
         android:textColor="@color/white_text"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
         app:layout_constraintStart_toStartOf="@id/progressBar"
-        app:layout_constraintTop_toTopOf="@id/titleTextView"
-        app:layout_constraintBottom_toTopOf="@+id/progressBar" />
+        app:layout_constraintTop_toTopOf="@id/titleTextView" />
 
     <TextView
         android:id="@+id/maxValueTextView"
@@ -20,32 +20,34 @@
         android:layout_height="wrap_content"
         android:text="Max"
         android:textColor="@color/white_text"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
         app:layout_constraintEnd_toEndOf="@id/progressBar"
-        app:layout_constraintTop_toTopOf="@id/titleTextView"
-        app:layout_constraintBottom_toTopOf="@+id/progressBar" />
+        app:layout_constraintTop_toTopOf="@id/titleTextView" />
 
     <ProgressBar
         android:id="@+id/progressBar"
         style="@style/CustomProgressBar"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/minValueTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="4dp"
+        android:indeterminate="false"
+        android:indeterminateTint="#FFC107"
+        android:progressTint="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintWidth_percent="0.8"
-        android:layout_marginTop="8dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minValueTextView"
+        app:layout_constraintWidth_percent="0.77" />
 
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Title"
-        android:textColor="@color/white_text"
-        android:textSize="16sp"
+        android:textColor="#C8C8C8"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/maxValueTextView"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/minValueTextView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
@@ -56,8 +58,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="0"
-        android:textColor="@color/white_text"
-        android:textSize="16sp"
+        android:textColor="#C8C8C8"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/titleTextView"
         app:layout_constraintTop_toTopOf="@+id/titleTextView" />
 
@@ -66,8 +68,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="100"
-        android:textColor="@color/white_text"
-        android:textSize="16sp"
+        android:textColor="#C8C8C8"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/textView11"
         app:layout_constraintTop_toTopOf="@+id/textView11" />
 
@@ -76,7 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" / "
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/currentValue"
         app:layout_constraintTop_toTopOf="@+id/currentValue" />
 

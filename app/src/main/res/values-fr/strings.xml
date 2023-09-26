@@ -91,7 +91,7 @@
     <string name="car_parameters">Paramètres Alpine</string>
     <string name="mirror_autofolding">Rabat Rétroviseurs</string>
     <string name="start_stop">Start and Stop</string>
-    <string name="car_park_signal">Beep frein à main</string>
+    <string name="car_park_signal">Désactivation Frein de Parking</string>
     <string name="overspeed_buzzer">Beep limiteur</string>
     <string name="start_stop_is_disable">Start Stop désactivé</string>
     <string name="car_sound_is_disable">Beep frein désactivé</string>

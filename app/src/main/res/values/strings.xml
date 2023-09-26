@@ -1,10 +1,10 @@
 <resources>
 
-    <string name="app_name" translatable="false">MyAlpDroid</string>
+    <string name="app_name" translatable="false">MyAlpDroidTrack</string>
     <string name="ecu_widget_name" translatable="false">ECU Info</string>
     <string name="temp_widget_name" translatable="false">Temp. Info</string>
 
-    <string name="appwidget_text" translatable="false">MyAlpDroid</string>
+    <string name="appwidget_text" translatable="false">MyAlpDroidTrack</string>
 
     <!-- Enabled players settings -->
     <string name="traduction_title">Langue Français / English</string>

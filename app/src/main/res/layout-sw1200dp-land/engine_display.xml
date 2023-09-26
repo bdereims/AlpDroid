@@ -35,7 +35,7 @@
                 android:layout_width="88dp"
                 android:layout_height="26dp"
                 android:layout_marginTop="54dp"
-                android:text="7650 mBar"
+                android:text="Psi FL"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="normal|bold"
@@ -47,7 +47,7 @@
                 android:layout_width="64dp"
                 android:layout_height="26dp"
                 android:layout_marginTop="24dp"
-                android:text="temp iFL"
+                android:text="temp FL"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="normal|bold"
@@ -63,6 +63,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="normal|bold"
+                android:visibility="invisible"
                 app:layout_constraintEnd_toEndOf="@+id/text_press_FL"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/text_press_FL"
@@ -77,6 +78,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="normal|bold"
+                android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="@+id/dessinCar"
                 app:layout_constraintStart_toStartOf="@+id/text_temp_RL2" />
 
@@ -98,7 +100,7 @@
                 android:layout_height="26dp"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
-                android:text="PsiRL"
+                android:text="Psi RL"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="normal|bold"
@@ -139,6 +141,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="normal|bold"
+                android:visibility="invisible"
                 app:layout_constraintEnd_toEndOf="@+id/text_press_FR"
                 app:layout_constraintTop_toBottomOf="@+id/text_press_FR" />
 
@@ -151,6 +154,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="normal|bold"
+                android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="@+id/dessinCar"
                 app:layout_constraintStart_toStartOf="@+id/text_temp_RR2" />
 
@@ -172,7 +176,7 @@
                 android:layout_height="26dp"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
-                android:text="PsiRR"
+                android:text="Psi RR"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="normal|bold"

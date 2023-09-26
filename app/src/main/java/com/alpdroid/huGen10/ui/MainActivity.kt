@@ -208,7 +208,8 @@ class MainActivity : FragmentActivity()  {
         var backgroundImage = "background"
         var taskbarColor = "#000000"
 
-        val string = sharedPreferences.getString("Choix", "background,#031627")
+        //val string = sharedPreferences.getString("Choix", "background,#031627")
+        val string = sharedPreferences.getString("Choix", "background,#000000")
         val targetChar = ','
         val targetIndex = string?.indexOf(targetChar)!!+1
 

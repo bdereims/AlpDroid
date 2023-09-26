@@ -57,7 +57,7 @@ class BargrapheFragment : UIFragment(500) {
 
         val heightPixels = displayMetrics.heightPixels
         val density = displayMetrics.density
-        val spacing = 4*resources.getDimension(R.dimen.bargraph_height)
+        val spacing = 3*resources.getDimension(R.dimen.bargraph_height)
 
         maxBargraphs=(heightPixels*density/spacing).toInt()
 
@@ -143,7 +143,7 @@ class BargrapheFragment : UIFragment(500) {
         super.onViewCreated(view, savedInstanceState)
 
         barGrapheTypes = mutableListOf(
-            BareGrapheType("Oil Temp.", 0, 150, 0) { barGrapheView, maxObs ->
+            BareGrapheType("Oil Temp.", 0, 135, 0) { barGrapheView, maxObs ->
                 //  logique de mise à jour de la ProgressBar pour le type 1
                 val progressValue =
                     (alpineServices.get_OilTemperature() - 40)
@@ -157,7 +157,7 @@ class BargrapheFragment : UIFragment(500) {
                     return@BareGrapheType maxObs
                 }
             },
-            BareGrapheType("Cool Temp.", 0, 130, 0) { barGrapheView, maxObs ->
+            BareGrapheType("Cool Temp.", 0, 125, 0) { barGrapheView, maxObs ->
                  //  logique de mise à jour de la ProgressBar pour le type 2
                 val progressValue =
                     (alpineServices.get_EngineCoolantTemp() - 40)
@@ -174,7 +174,7 @@ class BargrapheFragment : UIFragment(500) {
             },
 
 
-            BareGrapheType("Clutch Temp.", 60, 140, 0) { barGrapheView, maxObs ->
+            BareGrapheType("Clutch Temp.", 60, 135, 0) { barGrapheView, maxObs ->
                  //  logique de mise à jour de la ProgressBar pour le type 3
                 val progressValue =
                     (alpineServices.get_RST_ATClutchTemperature() + 60)
@@ -249,7 +249,7 @@ class BargrapheFragment : UIFragment(500) {
                 }
 
             },
-            BareGrapheType("Torque Nm", 0, 350, 0) { barGrapheView, maxObs ->
+            BareGrapheType("Torque Nm", 0, 420, 0) { barGrapheView, maxObs ->
                  //  logique de mise à jour de la ProgressBar pour le type x
                 val progressValue =
                     (alpineServices.get_MeanEffTorque()-400)/2
@@ -281,7 +281,7 @@ class BargrapheFragment : UIFragment(500) {
 
             },
 
-            BareGrapheType("Braking Pressure", 0, 120, 0) { barGrapheView, maxObs ->
+            BareGrapheType("Braking Pressure", 0, 20, 0) { barGrapheView, maxObs ->
                  //  logique de mise à jour de la ProgressBar pour le type 2
                 val progressValue =
                     alpineServices.get_BrakingPressure()/2
@@ -312,7 +312,7 @@ class BargrapheFragment : UIFragment(500) {
             },
 
             // temp is Ok
-            BareGrapheType("GearBox Temp.", 0, 140, 0) { barGrapheView, maxObs ->
+            BareGrapheType("GearBox Temp.", 0, 135, 0) { barGrapheView, maxObs ->
                 //  logique de mise à jour de la ProgressBar pour le type 2
                 val progressValue =
                     alpineServices.get_RST_ATOilTemperature()-40
