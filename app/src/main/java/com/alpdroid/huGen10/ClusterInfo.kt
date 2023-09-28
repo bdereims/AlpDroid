@@ -578,9 +578,9 @@ class ClusterInfo (var application: AlpdroidApplication):OnOsmandMissingListener
             {
                 // do nothing
             }
-            radioartistname = String.format("O:%3d°C G:%3d°C",application.alpdroidData.get_OilTemperature() - 40,application.alpdroidData.get_RST_ATClutchTemperature() + 60)
+            radioartistname = String.format("O:%3d°c G:%3d°c",application.alpdroidData.get_OilTemperature() - 40,application.alpdroidData.get_RST_ATClutchTemperature() + 60)
             //radiotrackname =  String.format("LF:%.2f RF%.2f \u000CLR%.2f RR%.2f", flwp,frwp,rlwp,rrwp)
-            radiotrackname =  String.format("LF:%.2f RF%.2f \u2028LR%.2f RR%.2f", flwp,frwp,rlwp,rrwp)
+            radiotrackname =  String.format("%.2fb %.2fb \u000C%.2fb %.2fb", flwp,frwp,rlwp,rrwp)
             prevtrackName=radiotrackname
             audioSource=4
             updateMusic=true

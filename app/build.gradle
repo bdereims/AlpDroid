@@ -23,7 +23,7 @@ android {
         minSdkVersion 29
         targetSdk 32
         versionCode 3
-        versionName '3.3.1-track'
+        versionName '3.3.1'
         multiDexEnabled false
         resourceConfigurations += ['en', 'fr']
 
@@ -79,7 +79,7 @@ android {
 
     android.applicationVariants.all { variant ->
         variant.outputs.all {
-            def appName = "MyAlpDroid-"
+            def appName = "MyAlpDroidTrack-"
             def date = new Date()
             def formattedDate = date.format('dd-mm-yy')
             outputFileName = appName + formattedDate + "-${variant.versionName}-${variant.versionCode}.apk"

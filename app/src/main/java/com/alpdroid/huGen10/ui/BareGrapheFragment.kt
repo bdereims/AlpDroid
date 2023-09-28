@@ -59,7 +59,7 @@ class BargrapheFragment : UIFragment(500) {
         val density = displayMetrics.density
         val spacing = 3*resources.getDimension(R.dimen.bargraph_height)
 
-        maxBargraphs=(heightPixels*density/spacing).toInt()
+        maxBargraphs=(heightPixels*density/spacing).toInt() - 1
 
         val questionView: ImageView = view.findViewById(R.id.question)
         questionView.setOnTouchListener { _, _ ->
